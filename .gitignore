@@ -1,31 +1,31 @@
-# Built things
-_Debug/
-Compiled/
+---Ghost Gui UI Library
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/UI-Library/refs/heads/main/Ghost%20Gui'))()
+game.CoreGui.GhostGui.MainFrame.Title.Text = "Title Here"
+---
 
-# AudioCache can be rebuilt from sources
-AudioCache/
 
-# Lockfile
-_OpenInEditor.lock
+AddContent("TextButton", "Text Here", [[
+--script here need clear--
+]])
 
-# User settings
-Game.agf.user
-*.crm.user
 
-# Backups
-Game.agf.bak
-backup_acsprset.spr
+TextBox = AddContent("TextBox","Text")
+TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+print(TextBox.Text)
+end)
 
-# Memory dumps
-*.dmp
 
-# Temporary files
-# temporarily created during sprite or room background compression
-~aclzw.tmp
-# temporary, main game data, before getting packed into exe
-game28.dta
-# temporary build of the game before being moved to Compiled/ folder
-*.exe
+AddContent("Toogle", "Text Here", [[
+--script here need clear--
+]])
 
-# Log files
-warnings.log
+
+AddContent("Switch", "Text Here", [[
+--script1 here need clear--
+]],[[
+--script2 here need clear--
+]])
+
+
+TextLabel = AddContent("TextLabel")
+TextLabel.Text = "Text Here"
